@@ -58,6 +58,12 @@ body {
     text-transform: uppercase;
 }
 
+/* Light */
+.button-light {
+    color: #242424;
+    background-color: #ffffff;
+}
+
 /* Pages */
 
 .page-header {
@@ -82,6 +88,12 @@ body {
     background-image: url(../images/index-bg.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.main-inner {
+    color: #242424;
+    background-color: #fbf7f4;
+    background-image: url(../images/bg-noisy.png);
 }
 
 /* List */
@@ -258,4 +270,81 @@ body {
     text-transform: uppercase;
   }
   
-  
+/* Catalog */
+.inner-header-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    color: #242424;
+}
+
+/* Link */
+.breadcrumbs-link {
+    color: inherit;
+}
+
+/* Title */
+.catalog-filter-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/* Label */
+.control-label {
+    font-weight: 700;
+}
+
+.sorting-container {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Product card*/
+.product-card {
+    background-color: #ffffff;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    font-weight: 700;
+    color: #000000;
+}
+
+.product-card-price {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #814b18;
+    text-transform: uppercase;
+}
+
+.pagination-link {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.pagination-current {
+    color: #242424;
+    background-color: #ffffff;
+}
+
+.pagination-disabled {
+    background-color: #595959;
+}
