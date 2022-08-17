@@ -38,7 +38,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -71,6 +79,23 @@ body {
     background-color: #000000;
 }
 
+.navigation {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 430px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+}
+
 .navigation-link {
     font-family: "PT Sans Narrow", sans-serif;
     line-height: 22px;
@@ -80,6 +105,10 @@ body {
     background-color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .main-index {
@@ -96,9 +125,28 @@ body {
     background-image: url(../images/bg-noisy.png);
 }
 
+.page-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
 /* List */
 .advantages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    color: #ffffff;
+}
+
+.advantages-item {
+    width: 277px;
 }
 
 /* Title */
@@ -111,6 +159,9 @@ body {
 
 /* Index-columns */
 .index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
     color: #242424;
     background-color: #fbf7f4;
     background-image: url(../images/bg-noisy.png);
@@ -118,15 +169,18 @@ body {
 
 /* Services */
 .services {
+    width: 390px
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
 }
 
 /* Title */
 .services-title {
+    font-family: "PT Sans Narrow", sans-serif;
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* Price */
@@ -141,6 +195,9 @@ body {
 }
 
 /* Gallery */
+.gallery {
+    width: 390px;
+}
 /* Title */
 .gallery-title {
     font-family: "PT Sans Narrow", sans-serif;
@@ -152,6 +209,7 @@ body {
 
 /* Contacts */
 .contacts {
+    width: 350px;
     font-weight: 700;
 }
 
@@ -188,10 +246,13 @@ body {
 }
 
 /* Appointment */
+.appointment {
+    width: 430px;
+}
 /* Title */
 .appointment-title {
     font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 32px;
+    font-size: 32px;
     line-height: 35px;
     font-weight: 700;
     text-transform: uppercase;
@@ -217,6 +278,17 @@ body {
     background-color: #242424;
     background-image: url(../images/bg-noisy.png);
     background-repeat: repeat;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.footer-contacts {
+    width: 200px;
+    margin-right: 130px;
 }
 
 .page-footer a {
@@ -268,6 +340,11 @@ body {
     color: #ffffff;
     text-decoration: underline;
     text-transform: uppercase;
+  }
+
+  .footer-social {
+    margin-left: auto;
+    max-width: 190px;
   }
   
 /* Catalog */
@@ -332,6 +409,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Pagination */
 .pagination-link {
     color: #ffffff;
     background-color: #000000;
@@ -347,4 +425,8 @@ body {
 
 .pagination-disabled {
     background-color: #595959;
+}
+
+.pagination {
+    background-color: #ffffff;
 }
