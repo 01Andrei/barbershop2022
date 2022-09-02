@@ -319,6 +319,24 @@ body {
 /* List */
 .appointment-form {
     color: #595959;
+    display: grid;
+    grid-template-columns: 114px 74px 208px;
+    gap: 19px 17px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.appointment-form-name {
+    grid-column: 1/-1;
+}
+
+.appointment-submit {
+    grid-column: 1/-1;
+    justify-self: start;
 }
 
 /* Label */
