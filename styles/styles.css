@@ -65,8 +65,9 @@ body {
     overflow: hidden;
   }
   
-
 .button {
+    display: inline-block;
+    padding: 14px 20px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -74,8 +75,14 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #000000;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button + .button {
+    margin-left: 16px;
 }
 
 /* Light */
@@ -219,7 +226,7 @@ body {
 
 /* Services */
 .services {
-    width: 390px
+    width: 390px;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
 }
@@ -237,9 +244,17 @@ body {
 
 /* Price */
 .services-list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
+    list-style: none;
+}
+
+.services-item {
+    margin-bottom: 22px;
 }
 
 .services-price{
@@ -283,11 +298,17 @@ body {
 
 /* Subtitle */
 .contacts-subtitle {
+    margin-top: 22px;
+    margin-bottom: 8px;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
     color: #af7842;
+}
+
+.contacts-address-text {
+    margin: 8px 0;
 }
 
 /* Phone */
@@ -299,6 +320,17 @@ body {
     text-transform: uppercase;
     color: #242424;
 
+}
+
+.contacts-schedule {
+    margin: 8px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-navigation {
+    margin-top: 21px;
+    margin-bottom: 0;
 }
 
 /* Appointment */
@@ -368,28 +400,18 @@ body {
     margin-right: 130px;
 }
 
-.page-footer a {
-    color: #ffffff;
+.footer-contacts-logo {
+    display: block;
+    margin-bottom: 24px;
 }
 
-.page-footer .htmlacademy-link {
-    font-size: 14px;
-    color: #dbb590;
-}
-
-.page-footer-title {
+.footer-about-text {
     margin-top: 0;
-    margin-bottom: 14px;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-
+    margin-bottom: 4px;
 }
 
 .footer-contacts-address {
+    margin-bottom: 16px;
     font-style: normal;
   }
   
@@ -421,29 +443,50 @@ body {
     text-transform: uppercase;
   }
 
-  .footer-social {
+.page-footer a {
+    color: #ffffff;
+}
+
+.page-footer .htmlacademy-link {
+    font-size: 14px;
+    color: #dbb590;
+}
+
+.page-footer-title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-social {
     margin-left: auto;
     max-width: 190px;
-  }
+}
 
-  .footer-social-list {
+.footer-social-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    margin-bottom: 28px;
     padding: 0;
     list-style: none;
-  }
+}
 
-  .footer-social-item {
+.footer-social-item {
     width: 56px;
     height: 44px;
     margin-right: 8px;
     margin-bottom: 8px;
-  }
+}
 
-  .footer-social-item:nth-child(3n) {
+.footer-social-item:nth-child(3n) {
     margin-right: 0;
-  }
+}
   
 /* Catalog */
 .inner-header-title {
