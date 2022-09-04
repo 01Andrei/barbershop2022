@@ -85,6 +85,14 @@ body {
     margin-left: 16px;
 }
 
+.button-all {
+    padding-right: 44px;
+    background-image: url(../images/icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center right 20px;
+}
+
 /* Light */
 .button-light {
     color: #242424;
@@ -113,19 +121,8 @@ body {
     list-style: none;
 }
 
-.navigation-logo {
-    display: flex;
-    align-items: center;
-    width: 140px;
-    margin-right: 100px;
-}
-
-.navigation-user {
-    max-width: 250px;
-    margin-left: auto;
-}
-
 .navigation-link {
+    position: relative;
     display: block;
     padding: 24px 19px;
     font-family: "PT Sans Narrow", sans-serif;
@@ -138,10 +135,50 @@ body {
     text-transform: uppercase;
 }
 
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #BDBDBD;
+}
+
+.navigation-logo {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+}
+
+.navigation-link-login {
+    padding-left: 44px;
+}
+
+.navigation-link-login .navigation-icon {
+    right: auto;
+    left: 20px;
+    margin: auto 0;
+}
+
 .navigation-user .navigation-link {
     min-width: 16px;
     min-height: 22px;
 }
+
+/* вставка бэкграундом не позволяет исппользовать состояния элемента, необходимо вставлять инлайново в html через тег svg
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
 
 .main-container {
     flex-grow: 1;
@@ -443,6 +480,19 @@ body {
     text-transform: uppercase;
   }
 
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-button {
+    width: 56px;
+    height: 44px;
+    background-image: url(../images/icons/arrow-tail-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+}
+
 .page-footer a {
     color: #ffffff;
 }
@@ -486,6 +536,27 @@ body {
 
 .footer-social-item:nth-child(3n) {
     margin-right: 0;
+}
+
+.footer-social-link {
+    display: block;
+    height: 44px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+}
+
+.footer-social-tw {
+    background-image: url(../images/icons/twitter.svg);
+}
+
+.footer-social-vk {
+    background-image: url(../images/icons/vk.svg);
+}
+
+.footer-social-instagram {
+    background-image: url(../images/icons/instagram.svg);
 }
   
 /* Catalog */
