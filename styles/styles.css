@@ -67,6 +67,7 @@ body {
   
 .button {
     display: inline-block;
+    box-sizing: border-box;
     padding: 14px 20px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -621,9 +622,29 @@ body {
     background-color: #ffffff;
 }
 
-.sorting-container .button {
+.sorting-type {
+    margin-right: auto;
+}
+
+.card-grid-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 56px;
     height: 44px;
+    background-color: #000000;
+}
+
+.card-grid-toggle svg {
+    fill: #ffffff;
+}
+
+.card-grid-toggle-current {
+    background-color: #ffffff;
+}
+
+.card-grid-toggle-current svg {
+    fill: #000000;
 }
 
  
@@ -727,6 +748,20 @@ body {
 
 .pagination-disabled {
     background-color: #595959;
+}
+
+.pagination-prev {
+    background-image: url(../images/icons/arrow-left.svg);
+    background-position: center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.pagination-next {
+    background-image: url(../images/icons/arrow-right.svg);
+    background-position: center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
 }
 
 .pagination-show-more {
